@@ -7,7 +7,7 @@
   "figma_flow_url": "https://www.figma.com/online-whiteboard/create-diagram/3f411c49-5872-4d31-8c76-ce4c0a9345e2?utm_source=other&utm_content=edit_in_figjam&oai_id=&request_id=826872b3-41ca-44f7-9c8d-b78dfc6583a9",
   "github_repo_url": "https://github.com/doumr32-bit/sleep-tracker-web",
   "github_branch": "main",
-  "github_latest_commit": "1dc21a3",
+  "github_latest_commit": "5294ed8",
   "vercel_url": "https://sleep-tracker-web.vercel.app",
   "supabase_project_id": "ldtfiqdgxcafecjgjrxm",
   "supabase_table": "public.sleep_records",
