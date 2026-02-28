@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Tracker</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <h1>Sleep Tracker</h1>
+        <p>记录每晚睡眠并查看趋势</p>
+      </header>
+
+      <section class="card">
+        <h2>新增记录</h2>
+        <form id="record-form">
+          <label>日期 <input type="date" name="date" required /></label>
+          <label>入睡时间 <input type="time" name="bedtime" required /></label>
+          <label>醒来时间 <input type="time" name="wakeTime" required /></label>
+          <label>质量评分
+            <select name="quality" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5</option>
+            </select>
+          </label>
+          <label>备注 <input type="text" name="notes" maxlength="120" /></label>
+          <button type="submit">保存记录</button>
+        </form>
+        <p id="status" class="status" aria-live="polite"></p>
+      </section>
+
+      <section class="card">
+        <h2>统计</h2>
+        <ul class="stats">
+          <li>平均时长: <strong data-stat="avg-duration">0h 0m</strong></li>
+          <li>平均质量: <strong data-stat="avg-quality">0</strong></li>
+          <li>最佳时长: <strong data-stat="best-duration">0h 0m</strong></li>
+          <li>最短时长: <strong data-stat="worst-duration">0h 0m</strong></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>记录列表</h2>
+        <ul id="record-list" class="records"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
