@@ -75,3 +75,10 @@
 - [x] Phase 5: E2E 审计修复
 - [x] Phase 6: 部署发布（Vercel + Supabase）
 - [x] Phase 7: 下一轮迭代输入
+
+## GitHub 推送记录
+
+- Remote: `https://github.com/doumr32-bit/sleep-tracker-web.git`
+- Branch: `main`
+- Latest commit: `1dc21a3`
+- 状态：已推送完成，可用于下一轮迭代。
